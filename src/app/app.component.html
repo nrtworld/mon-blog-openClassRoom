@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Bienvenue sur mon Blog!
+  </h1>
+</div>
+  <h2>Posts</h2>
+  <ul class="list-group">
+      <app-postListItem *ngFor="let post of postsArray"
+                    [title]="post.title"
+                    [content]="post.content"></app-postListItem>
+    </ul>
