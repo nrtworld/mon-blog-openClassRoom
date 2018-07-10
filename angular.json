@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mon-blog": {
+    "mon-projet-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -36,7 +36,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mon-blog",
+            "outputPath": "dist/mon-projet-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mon-blog:build"
+            "browserTarget": "mon-projet-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mon-blog:build:production"
+              "browserTarget": "mon-projet-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mon-blog:build"
+            "browserTarget": "mon-projet-angular:build"
           }
         },
         "test": {
@@ -118,7 +118,7 @@
         }
       }
     },
-    "mon-blog-e2e": {
+    "mon-projet-angular-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -126,11 +126,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mon-blog:serve"
+            "devServerTarget": "mon-projet-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mon-blog:serve:production"
+              "devServerTarget": "mon-projet-angular:serve:production"
             }
           }
         },
@@ -146,5 +146,5 @@
       }
     }
   },
-  "defaultProject": "mon-blog"
+  "defaultProject": "mon-projet-angular"
 }
